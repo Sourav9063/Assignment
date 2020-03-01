@@ -11,4 +11,13 @@ package ObjectPassingWays;
  */
 public class PassedObject {
     
+    public static void main(String[] args) {
+        ObjectPassingWaysMain mainClass=new ObjectPassingWaysMain();
+        
+        mainClass.objectClassObj.print();
+        
+        
+   
+    }
+    
 }
