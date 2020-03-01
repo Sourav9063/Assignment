@@ -11,13 +11,13 @@ package ObjectPassingWays;
  */
 public class PassedObject {
     
-    public static void main(String[] args) {
-        ObjectPassingWaysMain mainClass=new ObjectPassingWaysMain();
-        
-        mainClass.objectClassObj.print();
-        
-        
-   
-    }
+   public PassedObject(Object obj){
+       
+       int sum=obj.a+obj.b;
+       
+       System.out.println("Sum"+sum);
+       
+       
+   }
     
 }
