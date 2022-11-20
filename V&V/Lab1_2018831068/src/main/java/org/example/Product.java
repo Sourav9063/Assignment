@@ -4,9 +4,11 @@ public class Product {
     private int id;
     private String name;
     private int price;
-//group
+
 private String group;
 private String subGroup;
+
+private Shop shop=Shop.getInstance();
 
 
     public Product(String name, int price) {
@@ -20,6 +22,14 @@ private String subGroup;
     }
 
     public void setId(int id) {
+
+        for (Product product:shop.getProducts()) {
+            if(product.getId()==id){
+                System.out.println("Product with this id already exists");
+                return;
+            }
+        }
+
         this.id = id;
     }
 

@@ -6,6 +6,9 @@ public abstract class IPayment {
     public void setCharge(float charge) {
         this.charge = charge;
     }
+    public float getCharge() {
+        return charge;
+    }
 
     public abstract float payment(float amount);
 
