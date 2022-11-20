@@ -1,10 +1,16 @@
 package org.example;
 
 public interface IAdmin {
-    void addProduct(Product product);
-    void removeProduct(Product product);
-    void modifyProduct(Product product);
-void makeShipments();
-void confirmDelivery();
+    String addProduct(Product product);
+
+    String removeProduct(Product product);
+
+    String modifyProduct(Product product);
+
+    String makeShipments();
+
+    String confirmDelivery();
+
+    int getId();
 
 }

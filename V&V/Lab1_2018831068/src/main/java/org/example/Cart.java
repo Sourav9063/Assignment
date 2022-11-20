@@ -7,10 +7,12 @@ public class Cart implements ICart {
 
 private int id;
 private int numberOfProducts;
-private List<Product> products;
+private int userId;
+private List<Product> products = new ArrayList<Product>();
 private float totalPrice;
-public Cart(){
-    this.id=(int) Math.random()*1000;
+public Cart(int userId){
+    this.userId = userId;
+    this.id=(int) (Math.random()*1000);
     this.numberOfProducts=0;
     this.totalPrice=0;
     this.products=new ArrayList<Product>();
@@ -58,6 +60,11 @@ public Cart(){
 
     }
 
+    @Override
+    public List<Product> getProducts() {
+        return this.products;
+    }
+
     public int getId() {
         return id;
     }
@@ -68,16 +75,13 @@ public Cart(){
     }
 
 
-    public List<Product> getProducts() {
-        return products;
-    }
 
+public  int setId(int id) {
+return      this.id = id;
+}
 
     public float getTotalPrice() {
         return totalPrice;
     }
 
-    public void setTotalPrice(float totalPrice) {
-        this.totalPrice = totalPrice;
-    }
 }

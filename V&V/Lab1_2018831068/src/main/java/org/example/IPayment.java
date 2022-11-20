@@ -2,6 +2,13 @@ package org.example;
 
 public abstract class IPayment {
     private float charge;
-    public abstract float payment();
+
+    public void setCharge(float charge) {
+        this.charge = charge;
+    }
+
+    public abstract float payment(float amount);
+
+    public abstract float offers( float amount, float offer);
 
 }
