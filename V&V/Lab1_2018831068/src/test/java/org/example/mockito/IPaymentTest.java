@@ -1,4 +1,4 @@
-package org.example;
+package org.example.mockito;
 
 import org.example.IPayment;
 import org.junit.jupiter.api.BeforeAll;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class IPaymentTest {
 

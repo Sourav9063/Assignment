@@ -1,11 +1,9 @@
-package org.example;
+package org.example.mockito;
 
 import org.example.*;
 import org.junit.jupiter.api.*;
-import org.mockito.ArgumentMatcher;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
-
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -77,7 +75,7 @@ class CustomerTest {
     @Test
     @Order(5)
     void test5ViewProduct(){
-        assertTrue(3<= customer.viewProducts().size());
+        assertEquals(3, customer.viewProducts().size());
     }
 
 

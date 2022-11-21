@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.Admin;
+import org.example.Product;
+import org.example.Shop;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
